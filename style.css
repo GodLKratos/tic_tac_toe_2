@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-image: radial-gradient(yellow,orange,pink);
+}
+
+.heading h1{
+    background: linear-gradient(45deg, red,blue,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid red;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+
+.game-board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 100px;
+}
+.cell:hover{
+    background-color: lightgreen;
+    border: 2px solid orange;
+}
+
+.cell1 , .cell4 , .cell7{
+    border-left: none;
+}
+.cell1 , .cell2 , .cell3{
+    border-top: none;
+}
+.cell3 , .cell6 , .cell9{
+    border-right: none;
+}
+.cell7 , .cell8 , .cell9{
+    border-bottom: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+.back-screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.back-screen h1{
+    background: linear-gradient(45deg, red,blue,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.welcome{
+    background-color: rgba(0, 0, 0, 0.979);
+    border-radius: 10px;
+    position: fixed;
+    top: 250px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+
+}
+.welcome h1{
+    background: linear-gradient(45deg, red,blue,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+.welcome p{
+    background: linear-gradient(45deg, red,green,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.welcome button{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    background: linear-gradient(45deg, red,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+@media screen and (max-width:400px) {
+    .back-screen h1{
+        font-size: 20px;
+    }
+    .welcome p{
+        font-size: 20px;
+    }
+}
+
+
+.ch{
+    background-color: rgba(0, 0, 0, 0.979);
+    border-radius: 10px;
+    position: fixed;
+    top: 250px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+
+}
+.ch label{
+    color: white;
+    background: linear-gradient(45deg, red,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+.ch p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, red,blue,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ch h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, red,green,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ch button{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    background: linear-gradient(45deg, red,yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.win{
+    background-color: rgba(0, 0, 0, 0.488);
+    border-radius: 10px;
+    position: fixed;
+    top: 300px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+
+}
+
+.turn .turnX{
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1px;
+    font-size: 25px;
+
+}
+
+.turn .turn0{
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.toggle{
+    background-color: rgb(58, 251, 51);
+}
+
+.restart{
+    width: 200px;
+    height: 50px;
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: brown;
+    border-radius: 5px;
+}
+
+.tell{
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+    color: red;
+}

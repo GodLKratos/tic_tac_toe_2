@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <section>
+        <div class="heading">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="center">
+            <div class="turn">
+                <div class="turnX ">X Turn</div>
+                <div class="turn0 ">O Turn</div>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="cell cell1"></div>
+            <div class="cell cell2"></div>
+            <div class="cell cell3"></div>
+            <div class="cell cell4"></div>
+            <div class="cell cell5"></div>
+            <div class="cell cell6"></div>
+            <div class="cell cell7"></div>
+            <div class="cell cell8"></div>
+            <div class="cell cell9"></div>
+        </div>
+    </section>
+    <section class="back ">
+        <div class="back-screen ">
+            <h1>Welcome in Tic Tac Toe Game</h1>
+        </div>
+    </section>
+    <section class="center ">
+        <div class="welcome">
+            <h1>Welcome</h1>
+            <p>Press Start for Playing Game</p>
+            <button class="inital-start">Start</button>
+        </div>
+    </section>
+    <section class="choose center hide">
+        <div class="ch">
+            <h2>Choose</h2>
+            <input type="radio" id="ip11" name="val" value="1">
+            <label for="ip11">X</label>
+            <input type="radio" id="ip12" name="val" value="2">
+            <label for="ip12">O</label><br>
+            <p>and</p>
+            <input type="radio" id="ip21" name="val1" value="1">
+            <label for="ip21">Friend</label>
+            <input type="radio" id="ip22" name="val1" value="2">
+            <label for="ip22">Computer</label><br>
+            <button class="final-start">Start</button>
+        </div>
+    </section>
+    <section class="center">
+        <div class="win hide center">
+            <p class="tell"></p><br>
+            <button class="restart">Restart</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
